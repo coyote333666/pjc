@@ -2,7 +2,7 @@
 
 Client and server side library of simple functions in plain PHP and JQUERY UI for managing a chat with conversation saved in a postgresql database in real time.
 
-![pjp_screenshot](https://user-images.githubusercontent.com/24400013/156234197-b8dd4778-61bf-46e2-a455-549638380e1b.png)
+![image](https://user-images.githubusercontent.com/24400013/167026515-bb9f1b25-8cdd-4567-a629-ae82bc6e4eab.png)
 
 Requirements
 ------------
@@ -44,8 +44,8 @@ postgres$ GRANT ALL ON DATABASE test TO test;
 postgres$ exit
 $ sudo adduser test
 $ sudo su test
-$ git clone https://github.com/coyote333666/pjp pjp
-$ cd pjp/
+$ git clone https://github.com/coyote333666/pjc pjc
+$ cd pjc/
 $ psql -f script.sql -U test
 (password test)
 ```
@@ -55,6 +55,7 @@ Then access the application in your browser at the given URL (localhost/ppm).
 Note
 ----
 
+If you want to test localy, use two different browser (ex: chrome and apache) to simulate two session.
 If you don't want to log chat requests in Apache access.log, modify [access.log][4] :
 
 ```bash
