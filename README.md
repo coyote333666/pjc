@@ -2,7 +2,7 @@
 
 Client and server side library of simple functions in plain PHP and JQUERY UI for managing a chat with conversation saved in a postgresql database in real time.
 
-![pjp_screenshot](https://user-images.githubusercontent.com/24400013/156234197-b8dd4778-61bf-46e2-a455-549638380e1b.png)
+![image](https://user-images.githubusercontent.com/24400013/167026515-bb9f1b25-8cdd-4567-a629-ae82bc6e4eab.png)
 
 Requirements
 ------------
