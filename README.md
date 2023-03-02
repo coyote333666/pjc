@@ -55,6 +55,7 @@ Install dependancies:
 ```bash
 $ npm install jquery
 $ npm install jquery-ui-dist
+$ git clone https://github.com/dexterpu/jquery.ui.chatbox
 ```
 
 Then access the application in your browser at the given URL (localhost/ppm).
