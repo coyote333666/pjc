@@ -49,6 +49,12 @@ $ cd pjc/
 $ psql -f script.sql -U test
 (password test)
 ```
+Install dependancies:
+
+```bash
+$ npm install jquery
+$ npm install jquery-ui-dist
+```
 
 Then access the application in your browser at the given URL (localhost/ppm).
 
