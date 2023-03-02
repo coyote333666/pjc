@@ -38,7 +38,7 @@
 	define("FILE_DIR_CHAT"			, "jquery.ui.chatbox/");	
 	define("FILE_CHAT_CSS"			, FILE_DIR_CHAT . "jquery.ui.chatbox.css");	
 	define("FILE_CHAT_JS"			, FILE_DIR_CHAT . "jquery.ui.chatbox.js");	
-	define("FILE_CHATMGR_JS"		, FILE_DIR_CHAT . "chatboxManager.js");	
+	define("FILE_CHATMGR_JS"		, "chatboxManager.js");	
 	define("FILE_JSON_CHAT"			, "json_chat.php");
 	define("FILE_JSON_CHAT_UPDATE"	, "json_chat_update.php");
 
