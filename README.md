@@ -48,6 +48,7 @@ $ cd /home/test
 $ git clone https://github.com/coyote333666/pjp pjp
 $ cd pjp/
 $ psql -f script.sql -U test
+$ cd ..
 $ git clone https://github.com/coyote333666/pjc pjc
 $ cd pjc/
 $ psql -f script.sql -U test
