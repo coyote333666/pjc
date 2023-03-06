@@ -14,9 +14,9 @@
 
 	session_start(); 
 
-	define("FILE_FUNCTION"			, "function.php");
-	define("FILE_BODY"				, "body.php");
-	define("FILE_FOOTER"			, "footer.php");
+	define("FILE_FUNCTION"			, "../pjp/function.php"); 
+	define("FILE_BODY"				, "../pjp/body.php");
+	define("FILE_FOOTER"			, "../pjp/footer.php");
 	define("FILE_LOGIN"				, "login.php");
 	define("FILE_INDEX"				, "index.php");
 	define("FILE_PORTLET_99"		, "portlet_99.php");
@@ -27,11 +27,11 @@
 	define("PG_PASSWORD"			, "test");
 	define("PG_DATABASE"			, "test");
 	define("PG_PORT"				, "5432");						
-	define("S_DIR_JQUERY_UI"		, "node_modules/jquery-ui-dist/");
-	define("S_DIR_JQUERY"			, "node_modules/jquery/dist/");
-	define("S_FILE_JQUERY"			, S_DIR_JQUERY	. "jquery.min.js");
-	define("S_FILE_JQUERY_UI_JS"	, S_DIR_JQUERY_UI	. "jquery-ui.min.js");
-	define("S_FILE_JQUERY_UI_CSS"	, S_DIR_JQUERY_UI	. "jquery-ui.min.css");
+	define("DIR_JQUERY_UI"		, "node_modules/jquery-ui-dist/");
+	define("DIR_JQUERY"			, "node_modules/jquery/dist/");
+	define("FILE_JQUERY"			, DIR_JQUERY	. "jquery.min.js");
+	define("FILE_JQUERY_UI_JS"	, DIR_JQUERY_UI	. "jquery-ui.min.js");
+	define("FILE_JQUERY_UI_CSS"	, DIR_JQUERY_UI	. "jquery-ui.min.css");
 	define("PARAMETER_REDIRECTOR"	, "page=");
 	define("FILE_CHAT_MANAGER"		, "chat_manager.php");
 	define("FILE_LOGIN_MANAGER"		, "login_manager.php");

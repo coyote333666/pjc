@@ -45,6 +45,9 @@ postgres$ exit
 $ sudo adduser test
 $ sudo su test
 $ cd /home/test
+$ git clone https://github.com/coyote333666/pjp pjp
+$ cd pjp/
+$ psql -f script.sql -U test
 $ git clone https://github.com/coyote333666/pjc pjc
 $ cd pjc/
 $ psql -f script.sql -U test

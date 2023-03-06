@@ -2,35 +2,6 @@
 
 /* SQL DDL */
 
-CREATE SEQUENCE public.portlet_seq
-    START WITH 20
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-CREATE TABLE "public"."portlet" (
-    "portlet_id" integer DEFAULT nextval('portlet_seq') NOT NULL
-    ,"header" text
-    ,"portlet_name" text
-    , CONSTRAINT "portlet_pk" PRIMARY KEY ("portlet_id")
-) WITH (oids = false);
-
-CREATE SEQUENCE public.portlet_user_seq
-    START WITH 20
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-CREATE TABLE "public"."portlet_user" (
-    "user_id" integer DEFAULT nextval('portlet_user_seq') NOT NULL
-    ,"portlets_state" text
-    ,"portlets_left" text
-    ,"portlets_right" text 
-    , CONSTRAINT "portlet_user_pk" PRIMARY KEY ("user_id")
-) WITH (oids = false);
-
 CREATE SEQUENCE public.chat_message_seq
     START WITH 20
     INCREMENT BY 1
@@ -74,7 +45,7 @@ ALTER TABLE ONLY public.login_details
 ALTER TABLE ONLY public.login_details 
 	ALTER COLUMN login_details_id SET DEFAULT nextval('public.login_details_seq'::regclass);
 
-CREATE SEQUENCE public.user_seq
+CREATE SEQUENCE public.chat_user_seq
     START WITH 20
     INCREMENT BY 1
     NO MINVALUE
@@ -83,7 +54,7 @@ CREATE SEQUENCE public.user_seq
 
 CREATE TABLE public.chat_user
 ( 
-	user_id integer NOT NULL DEFAULT nextval('public.user_seq'::regclass),
+	user_id integer NOT NULL DEFAULT nextval('public.chat_user_seq'::regclass),
 	last_name character varying(255) COLLATE pg_catalog."default",
 	first_name character varying(255) COLLATE pg_catalog."default",
 	email character varying(255) COLLATE pg_catalog."default",
@@ -112,17 +83,17 @@ CREATE INDEX "chat_user.email"
 INSERT INTO "portlet" ("portlet_id","header", "portlet_name") VALUES
 (1,'Online users','portlet_99');
 
-INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
-(1,'Smith','John','John-Smith@me.com');
-
-INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
-(2,'Tremblay','Pierre','Pierre-Tremblay@me.com');
-
 INSERT INTO "portlet_user" ("user_id","portlets_state", "portlets_left", "portlets_right") VALUES
 (1,'{"portlet-content-99":1}','portlet_99','');
 
 INSERT INTO "portlet_user" ("user_id","portlets_state", "portlets_left", "portlets_right") VALUES
 (2,'{"portlet-content-99":1}','portlet_99','');
+
+INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
+(1,'Smith','John','John-Smith@me.com');
+
+INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
+(2,'Tremblay','Pierre','Pierre-Tremblay@me.com');
 
 INSERT INTO "login_details" ("login_details_id","user_id", "last_activity") VALUES
 (1,1,now());
