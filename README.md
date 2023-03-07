@@ -43,12 +43,12 @@ postgres$ REVOKE ALL ON DATABASE test FROM public;
 postgres$ GRANT ALL ON DATABASE test TO test;        
 postgres$ exit
 $ cd /var/www/html
-$ git clone https://github.com/coyote333666/pjp pjp
+$ sudo git clone https://github.com/coyote333666/pjp pjp
 $ cd pjp
 $ psql -f script.sql -U test
 (password test)
 $ cd ..
-$ git clone https://github.com/coyote333666/pjc pjc
+$ sudo git clone https://github.com/coyote333666/pjc pjc
 $ cd pjc
 $ psql -f script.sql -U test
 (password test)
