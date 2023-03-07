@@ -95,8 +95,3 @@ INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
 INSERT INTO "chat_user" ("user_id","last_name", "first_name", "email") VALUES
 (2,'Tremblay','Pierre','Pierre-Tremblay@me.com');
 
-INSERT INTO "login_details" ("login_details_id","user_id", "last_activity") VALUES
-(1,1,now());
-
-INSERT INTO "login_details" ("login_details_id","user_id", "last_activity") VALUES
-(2,2,now());
