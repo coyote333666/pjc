@@ -62,7 +62,7 @@ $ sudo npm install jquery
 $ sudo npm install jquery-ui-dist
 ```
 
-Then access the application in your browser at the given URL (localhost/ppm).
+Then access the application in your browser at the given URL (localhost/pjc).
 
 Note
 ----
