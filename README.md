@@ -50,7 +50,6 @@ $ psql -f script.sql -U test
 $ cd ..
 $ git clone https://github.com/coyote333666/pjc pjc
 $ cd pjc
-$ git clone https://github.com/dexterpu/jquery.ui.chatbox
 $ psql -f script.sql -U test
 (password test)
 ```
@@ -58,6 +57,7 @@ Install dependancies:
 
 ```bash
 $ cd /var/www/html
+$ sudo git clone https://github.com/dexterpu/jquery.ui.chatbox chatbox
 $ sudo npm install jquery
 $ sudo npm install jquery-ui-dist
 ```

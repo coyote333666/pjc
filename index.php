@@ -35,7 +35,7 @@
 	define("PARAMETER_REDIRECTOR"	, "page=");
 	define("FILE_CHAT_MANAGER"		, "chat_manager.php");
 	define("FILE_LOGIN_MANAGER"		, "login_manager.php");
-	define("FILE_DIR_CHAT"			, "jquery.ui.chatbox/");	
+	define("FILE_DIR_CHAT"			, "../chatbox/");	
 	define("FILE_CHAT_CSS"			, FILE_DIR_CHAT . "jquery.ui.chatbox.css");	
 	define("FILE_CHAT_JS"			, FILE_DIR_CHAT . "jquery.ui.chatbox.js");	
 	define("FILE_CHATMGR_JS"		, "chatboxManager.js");	
