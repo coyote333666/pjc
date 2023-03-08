@@ -58,8 +58,7 @@ Install dependancies:
 ```bash
 $ cd /var/www/html
 $ sudo git clone https://github.com/dexterpu/jquery.ui.chatbox chatbox
-$ sudo npm install jquery
-$ sudo npm install jquery-ui-dist
+$ sudo bower install jquery-ui
 ```
 
 Then access the application in your browser at the given URL (localhost/pjc).
