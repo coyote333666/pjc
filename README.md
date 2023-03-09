@@ -14,7 +14,7 @@ Requirements
 Installation
 ------------
 
-Verify that you have installed, depending on your environment, [docker-compose][1] OR [postgresql][2].
+Verify that you have installed, depending on your environment, [docker-compose][1] OR [postgresql][2], [npm][5], [yarn][6] and [nodejs][7].
 
 Verify that you have PHP installed : `sudo apt-get install php` on linux or, for windows, use php already included in [xampp][3].
 If you have Windows, do not forget to indicate in the environment variable PATH, 
@@ -84,4 +84,6 @@ If you don't want to log chat requests in Apache access.log, modify [access.log]
 [2]: https://www.postgresql.org/
 [3]: https://www.apachefriends.org/index.html
 [4]: https://stackoverflow.com/questions/40205569/dont-log-certain-requests-in-apache-access-log
- 
+[5]: https://www.npmjs.com/
+[6]: https://yarnpkg.com/
+[7]: https://nodejs.org/en/
