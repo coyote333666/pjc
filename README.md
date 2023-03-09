@@ -14,7 +14,7 @@ Requirements
 Installation
 ------------
 
-Verify that you have installed, depending on your environment, [docker-compose][1] OR [postgresql][2], [npm][5], [yarn][6] and [nodejs][7].
+Verify that you have installed, depending on your environment, [docker-compose][1] OR [postgresql][2], [npm][5], [yarn][6], [nodejs][7] and [git][8].
 
 Verify that you have PHP installed : `sudo apt-get install php` on linux or, for windows, use php already included in [xampp][3].
 If you have Windows, do not forget to indicate in the environment variable PATH, 
@@ -87,3 +87,4 @@ If you don't want to log chat requests in Apache access.log, modify [access.log]
 [5]: https://www.npmjs.com/
 [6]: https://yarnpkg.com/
 [7]: https://nodejs.org/en/
+[8]: https://git-scm.com/
